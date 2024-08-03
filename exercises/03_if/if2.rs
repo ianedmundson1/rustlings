@@ -1,16 +1,18 @@
-// TODO: Fix the compiler error on this function.
-fn foo_if_fizz(fizzish: &str) -> &str {
-    if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
-    }
-}
 
 fn main() {
     // You can optionally experiment here.
 }
 
+// TODO: Fix the compiler error on this function.
+fn foo_if_fizz(fizzish: &str) -> &str {
+    if fizzish == "fizz" {
+        "foo"
+    } else if fizzish == "fuzz" {
+        "bar"
+    }else {
+        "baz" }
+
+}
 // TODO: Read the tests to understand the desired behavior.
 // Make all tests pass without changing them.
 #[cfg(test)]
